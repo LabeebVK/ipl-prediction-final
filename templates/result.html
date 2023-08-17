@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IPL Score Predictor</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='ipl-favicon.ico') }}">
+  <script src="https://kit.fontawesome.com/f13b0bc903.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>IPL Batting Score Predictor 🏆</h1>
+  <!-- Result -->
+  <div class="register">
+    <center>
+      <p style="font-size: 30px;">The final predicted score (range):<br> {{ lower_limit }} to {{ upper_limit }}</p>
+    </center>
+  </div>
+</body>
+</html>
